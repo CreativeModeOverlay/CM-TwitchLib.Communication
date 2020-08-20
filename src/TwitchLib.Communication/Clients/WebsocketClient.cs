@@ -179,7 +179,7 @@ namespace TwitchLib.Communication.Clients
                 while (IsConnected && _networkServicesRunning)
                 {
                     WebSocketReceiveResult result;
-                    var buffer = new byte[1024];
+                    var buffer = new byte[4096];
 
                     try
                     {
